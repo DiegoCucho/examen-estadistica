@@ -222,7 +222,23 @@ nav.ctl button:hover{background:var(--chip)}
   </div>
 </section>
 
-
+<section class="slide" data-owner="2" data-title="Pasajeros aéreos">
+  <div class="tag"><b class="own"></b><span>Caso del docente · pasajeros aéreos</span></div>
+  <h2>Tendencia lineal simple y proyección de 12 meses</h2>
+  <div class="grid g21">
+    <div class="chart" id="c_pas"></div>
+    <div>
+      <p>Regresión lineal simple de la tendencia (descomposición aditiva):</p>
+      <p style="margin:8px 0"><span class="eq" id="eq_pas"></span></p>
+      <ul>
+        <li>Unos <b>32 mil pasajeros más por año</b>; R² = 0,989 (descriptivo, la tendencia ya está suavizada).</li>
+        <li>La estacionalidad crece con el nivel: es <b>multiplicativa</b>.</li>
+        <li>Proyectando 1960, <b>Holt-Winters</b> logró 2,2 % de error (MAPE), mejor que SARIMA (2,9 %) y la regresión log-lineal (8,0 %).</li>
+        <li>Un R² alto de ajuste <b>no garantiza</b> buena proyección.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 <section class="slide" data-owner="3" data-title="Control por variables">
   <div class="tag"><b class="own"></b><span>Gráficas de control por variables</span></div>
